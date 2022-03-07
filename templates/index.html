@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Index Page</title>
+</head>
+<body>
+	<div><h4>Welcome to AI</h4></div>
+	<div>
+		<form method="POST" action="/predict">
+			<input type="text" name="sl" placeholder="Enter sepal length">
+			<input type="text" name="sw" placeholder="Enter sepal width">
+			<input type="text" name="pl" placeholder="Enter petal length">
+			<input type="text" name="pw" placeholder="Enter petal width">
+			<button type="reset">Clear</button>
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+<div>
+	<h4>Flower type is : {{flower_type }} and Predicted probability is : {{probability}}</h4>
+</div>
+</body>
+</html>
